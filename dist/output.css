@@ -739,6 +739,14 @@ video {
   background-image: url('../assets/images/backdrop.webp');
 }
 
+.bg-\[url\(\'\/assets\/images\/backdrop\.webp\'\)\] {
+  background-image: url('/assets/images/backdrop.webp');
+}
+
+.bg-\[url\(\'assets\/images\/backdrop\.webp\'\)\] {
+  background-image: url('assets/images/backdrop.webp');
+}
+
 .bg-cover {
   background-size: cover;
 }
