@@ -8,8 +8,8 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-gray-700  text-white shadow">
-        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header class="bg-gray-700  text-white fixed top-0 w-full shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between ">
             <div class="text-2xl font-bold">My Portfolio</div>
             <nav class="space-x-4">
                 <!--<a href="#about" class="hover:text-gray-300 transition duration-300">About</a>-->
@@ -19,38 +19,57 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="px-12 py-12 text-center text-white bg-cover bg-[url('../assets/images/backdrop.webp')] w-full h-100 bg-center">
+    <!--Section -->
+    <section id="welcome" class="px-12 py-20 text-center text-white bg-cover bg-[url('../assets/images/backdrop.webp')] w-full h-100 bg-center">      
+        <div class="text-center py-8 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl text-white sm:text-6xl">
+              Shaping a world with
+            </h1>
+            <h1 class="mt-1 sm:mt-3 text-7xl font-bold sm:text-9xl">
+              <span class="bg-clip-text bg-gradient-to-tr from-gray-900 to-gray-400 text-transparent">Reimagination</span>
+            </h1>
+        </div>
+    </section>
 
-            <!--<img src="../src/images/pfp.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg transform hover:scale-110 transition duration-300">-->
-            <h1 class="text-7xl font-bold mb-6">About Me</h1>
-            <div class="border-solid container w-3/5 mx-auto px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div>
-                        <img src="assets/images/picture.jpg" alt="Profile Picture" class="w-4/5 h-auto  mx-auto mb-6 shadow-lg">
-                    </div>
-                    <div class="text-justify">
-                        <p class="">I am <strong> Keith Derreck Valdeo</strong>, a passionate web developer 
-                            with experience in creating dynamic and responsive websites using modern web 
-                            technologies. I enjoy solving complex problems and continuously learning new skills.</p>
-
-                        <p class="mt-4">I am proficient in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>PHP</b>. 
-                            I have experience in using frameworks such as Bootstrap, Tailwind CSS, and Laravel. 
-                            I am also familiar with version control using Git and GitHub.</p>
+     <!-- About Section -->
+    <section id="about" class="px-12 py-12 text-center text-white bg-cover bg-gray-500">
+        <h1 class="text-7xl font-bold mb-6">About Me</h1>
+        <div class="container w-3/5 mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2  gap-5">
+                <div>
+                    <img src="assets/images/pfp.png" alt="Profile Picture" class="w-auto h-auto">
+                </div>
+                <div class="grid place-items-center center text-justify">
+                    <p>I am <strong> Keith Derreck Valdeo</strong>, a 3rd year <strong>BS Computer Science</strong>
+                        student in <strong>Visayas State University</strong>. I'am a passionate web developer 
+                        with experience in creating dynamic and responsive websites using modern web 
+                        technologies. I enjoy solving complex problems and continuously learning new skills.
+                        I am proficient in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
+                        I have experience in using frameworks such as Tailwind CSS and ReactJS. 
+                        I am also familiar with version control using Git and GitHub.
+                    </p>
+                    <p><strong>Programming languages:</strong></p>
+                    <div class="flex items-center">     
+                        <img src="../assets/images/Clogo.webp" alt="C Language" class="w-32 h-auto">
+                        <img src="../assets/images/Cpluslogo.webp" alt="C++ Language" class="w-24 h-auto">
+                        <img src="../assets/images/Javalogo.png" alt="Java Language" class="w-20 h-auto">
+                        <img src="../assets/images/Csharplogo.png" alt="C# Language" class="w-28 h-auto">
+                        <img src="../assets/images/Python.png" alt="Python Language" class="w-20 h-auto">
                     </div>
                 </div>
-            </div>   
+            </div>
+        </div>   
     </section>
-    <hr>
+
     <!-- Projects Section -->
     <section id="projects" class="bg-gray-700 text-white py-12">
         <div class="container mx-auto px-6 ">
             <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Project 1 -->
-                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
-                    <p class="text-gray-700">Description of project 1. 
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg  hover:bg-gray-500  transition duration-300">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-white ">Project 1</h3>
+                    <p class="text-gray-700 group-hover:text-white">Description of project 1. 
                         adaadaasdadasddddddddddddd
                         dddddddddddddddddddddddddddddddddd adaadaasdadasddddddddddddd
                         dddddddddddddddddddddddddddddddddd adaadaasdadasddddddddddddd
@@ -59,21 +78,21 @@
                     </p>
                 </div>
                 <!-- Project 2 -->
-                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-xl font-bold mb-2">Project 2</h3>
-                    <p class="text-gray-700">Description of project 2.</p>
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-white">Project 2</h3>
+                    <p class="text-gray-700 group-hover:text-white">Description of project 2.</p>
                 </div>
                 <!-- Project 3 -->
-                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-xl font-bold mb-2">Project 3</h3>
-                    <p class="text-gray-700">Description of project 3.</p>
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-white">Project 3</h3>
+                    <p class="text-gray-700 group-hover:text-white">Description of project 3.</p>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
+    
     <!-- Contact Section -->
-    <section id="contact" class=" mx-auto px-6 py-12">
+    <section id="contact" class=" mx-auto px-6 py-12 bg-gray-500">
         <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
         <form class="space-y-6 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
             <div>
@@ -93,7 +112,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white shadow py-6 mt-12">
+    <footer class="bg-gray-700 text-white shadow py-6">
         <div class="container mx-auto px-6 text-center">
             <p class="text-gray-300">&copy; 2024 My Portfolio. All rights reserved.</p>
             <div class="mt-4 flex justify-center space-x-4">
