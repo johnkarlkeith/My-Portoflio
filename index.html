@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/output.css">
     <title>Portfolio</title>
+    <style>
+        .expandable {
+            max-height: 65px;
+            overflow: hidden;
+            transition: max-height 1.0s ease-in-out;
+        }
+        .expandable:hover {
+            max-height: 1000px; /* Adjust this value based on the content */
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -33,7 +43,7 @@
 
      <!-- About Section -->
     <section id="about" class="px-12 py-12 text-center text-white bg-cover bg-gray-500">
-        <h1 class="text-7xl font-bold mb-6">About Me</h1>
+        <h1 class="text-6xl font-bold mb-6">Get To Know Me</h1>
         <div class="container w-3/5 mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2  gap-5">
                 <div>
@@ -48,13 +58,19 @@
                         I have experience in using frameworks such as Tailwind CSS and ReactJS. 
                         I am also familiar with version control using Git and GitHub.
                     </p>
-                    <p><strong>Programming languages:</strong></p>
+                    <p><strong>Other Programming languages:</strong></p>
                     <div class="flex items-center">     
-                        <img src="../assets/images/Clogo.webp" alt="C Language" class="w-32 h-auto">
-                        <img src="../assets/images/Cpluslogo.webp" alt="C++ Language" class="w-24 h-auto">
-                        <img src="../assets/images/Javalogo.png" alt="Java Language" class="w-20 h-auto">
-                        <img src="../assets/images/Csharplogo.png" alt="C# Language" class="w-28 h-auto">
-                        <img src="../assets/images/Python.png" alt="Python Language" class="w-20 h-auto">
+                        <img src="../assets/images/clogo.webp" alt="C Language" class="w-32 h-auto">
+                        <img src="../assets/images/cpluslogo.webp" alt="C++ Language" class="w-24 h-auto">
+                        <img src="../assets/images/javalogo.png" alt="Java Language" class="w-20 h-auto">
+                        <img src="../assets/images/csharplogo.png" alt="C# Language" class="w-28 h-auto">
+                        <img src="../assets/images/python.png" alt="Python Language" class="w-20 h-auto">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p>Know me more:  </p>
+                        <a href="assets/files/Resume.pdf" download class="mt-4 inline-block  bg-gray-500 text-white font-bold border-2 hover:bg-gray-700 hover:border-gray-800 py-2 px-4 rounded ">
+                            Download Resume
+                        </a>
                     </div>
                 </div>
             </div>
@@ -62,28 +78,27 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-gray-700 text-white py-12">
+    <section id="projects" class="bg-gray-700 text-white py-16">
         <div class="container mx-auto px-6 ">
-            <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+            <h2 class="text-4xl font-bold mb-8 text-center">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Project 1 -->
-                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg  hover:bg-gray-500  transition duration-300">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-white ">Project 1</h3>
-                    <p class="text-gray-700 group-hover:text-white">Description of project 1. 
-                        adaadaasdadasddddddddddddd
-                        dddddddddddddddddddddddddddddddddd adaadaasdadasddddddddddddd
-                        dddddddddddddddddddddddddddddddddd adaadaasdadasddddddddddddd
-                        dddddddddddddddddddddddddddddddddd adaadaasdadasddddddddddddd
-                        dddddddddddddddddddddddddddddddddd 
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg  hover:bg-gray-500  transition duration-300 expandable">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-white ">E.M.S. Kiosk</h3>
+                    <p class="text-gray-700 group-hover:text-white mb-5"> 
+                        Election Management System Kiosk is a Desktop Application that aims to provide a 
+                        convenient and efficient way of voting during the election. It is developed using <strong>C# Language</strong> 
+                        and <strong>GunaUI</strong> Framework with <strong>MySQL</strong> as its  Database.
                     </p>
+                    <img src="../assets/images/ems.png" alt="Election Management System Kiosk" class="w-30 h-auto">
                 </div>
                 <!-- Project 2 -->
-                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300 expandable">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-white">Project 2</h3>
                     <p class="text-gray-700 group-hover:text-white">Description of project 2.</p>
                 </div>
                 <!-- Project 3 -->
-                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                <div class="group bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300 expandable">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-white">Project 3</h3>
                     <p class="text-gray-700 group-hover:text-white">Description of project 3.</p>
                 </div>
@@ -93,7 +108,7 @@
     
     <!-- Contact Section -->
     <section id="contact" class=" mx-auto px-6 py-12 bg-gray-500">
-        <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
+        <h2 class="text-3xl text-white font-bold mb-6 text-center">Contact</h2>
         <form class="space-y-6 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
             <div>
                 <label for="name" class="block text-lg font-medium mb-2">Name</label>
